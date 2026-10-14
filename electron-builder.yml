@@ -1,0 +1,21 @@
+appId: com.interviewhelper.desktop
+productName: 面试助手
+electronDist: node_modules/electron/dist
+directories:
+  output: dist
+files:
+  - out/**/*
+  - resources/icon.ico
+  - package.json
+win:
+  icon: resources/icon.ico
+  target:
+    - target: nsis
+      arch: [x64]
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+artifactName: interview-helper-${version}-${arch}-setup.${ext}
