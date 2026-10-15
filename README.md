@@ -786,6 +786,8 @@ async def websocket_asr_endpoint(websocket: WebSocket, channel: str = "interview
 
 ### 9.2 跨平台桌面打包权限配置 (`electron-builder.yml`)
 
+<img width="1800" height="1005" alt="image" src="https://github.com/user-attachments/assets/3a96455b-02a0-4a98-8c1f-53b45fb3854f" />
+
 * **Windows 平台（Windows 10/11）**：原生支持 `WASAPI Loopback`，无需安装 Virtual Audio Cable 虚拟声卡即可直接抓取系统声音。
 * **macOS 平台（macOS 13.0+）**：在 `entitlements.mac.plist` 中声明麦克风与屏幕音频捕获权限：
   * `com.apple.security.device.audio-input`: `true`
